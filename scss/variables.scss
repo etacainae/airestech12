@@ -1,0 +1,125 @@
+$blue: #2db2fa;
+$Ruda: "Ruda", serif;
+.container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1392px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-title {
+	font-family: $Ruda;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #0b0b0b;
+	.blue {
+		color: $blue;
+	}
+	&.white {
+		color: #fff;
+	}
+}
+.btn {
+	transition: .2s;
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: #2db2fa;
+	color: #ffffff;
+	font-family: $Ruda;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: -0.32px;
+	&:after {
+		content: url(../img/icons/btn-border.svg);
+		position: absolute;
+		right: 0;
+		bottom: -4px;
+	}
+	&.cart-btn {
+		&:before {
+			content: '';
+			transform: translateY(2px);
+			background: url(../img/icons/cart.svg) center no-repeat;
+			background-size: contain;
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			margin-right: 14px;
+		}
+	}
+	&:hover {
+		transition: .2s;
+		box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
+	}
+}
+.read-more-btn {
+	overflow: hidden;
+	height: 50px;
+	width: 162px;
+	padding: 15px;
+	position: relative;
+	padding-right: 55px;
+	color: #ffffff;
+	font-family: $Ruda;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: -0.32px;
+	span {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+		z-index: 2;
+		&:after {
+			content: url(../img/icons/arrow-right_white.svg);
+			position: absolute;
+			right: -40px;
+		}
+	}
+	&:before {
+		transition: .4s;
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		border-radius: 25px;
+		border: 2px solid $blue;
+		border-left: none;
+		width: 40%;
+		height: 100%;
+		background-color: #16313f;
+	}
+	&:after {
+		transition: .4s;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 120px;
+		height: 100%;
+		border: 2px solid #272727;
+		border-right: none;
+		background-color: #101010;
+		border-radius: 25px 0 0 25px;
+	}
+	&:hover {
+		&:before {
+			transition: .4s;
+			width: 100%;
+			border-left: 2px solid $blue;
+		}
+		&:after {
+			transition: .4s;
+			width: 0;
+			border: none;
+		}
+	}
+}

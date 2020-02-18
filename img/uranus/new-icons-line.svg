@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="153.5" viewBox="0 0 7 153.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d5f0fe"/>
+      <stop offset="0.488" stop-color="#2db2fa"/>
+      <stop offset="1" stop-color="#d5f0fe"/>
+    </linearGradient>
+  </defs>
+  <g id="Component_183_1" data-name="Component 183 – 1" transform="translate(0 0.15)">
+    <line id="Line_38" data-name="Line 38" y2="152" transform="translate(3.5 0.6)" fill="none" stroke="#d5f0fe" stroke-linecap="round" stroke-width="1.5"/>
+    <rect id="Rectangle_449" data-name="Rectangle 449" width="1.5" height="153" rx="0.75" transform="translate(2.7)" fill="url(#linear-gradient)"/>
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(0 9.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
+      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+    </g>
+    <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(0 73.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
+      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+    </g>
+    <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(0 137.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
+      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+    </g>
+  </g>
+</svg>

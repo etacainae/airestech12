@@ -26,6 +26,7 @@ $Ruda: "Ruda", serif;
 }
 .btn {
 	transition: .2s;
+	cursor: pointer;
 	position: relative;
 	display: inline-block;
 	padding: 10px 20px;
@@ -46,7 +47,9 @@ $Ruda: "Ruda", serif;
 		&:before {
 			content: '';
 			transform: translateY(2px);
-			background: url(../img/icons/cart.svg) center no-repeat;
+			background-image: url(../img/icons/cart.svg);
+			background-position: center;
+			background-repeat: no-repeat;
 			background-size: contain;
 			display: inline-block;
 			width: 16px;
@@ -58,12 +61,25 @@ $Ruda: "Ruda", serif;
 		transition: .2s;
 		box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
 	}
+	&.comment-btn {
+		&:before {
+			content: '';
+			transform: translateY(2px);
+			background-image: url(../img/icons/comment.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			margin-right: 14px;
+		}
+	}
 }
-.read-more-btn {
+.btn-animate {
 	overflow: hidden;
 	height: 50px;
-	width: 162px;
-	padding: 15px;
+	padding: 15px 20px;
 	position: relative;
 	padding-right: 55px;
 	color: #ffffff;
@@ -72,10 +88,7 @@ $Ruda: "Ruda", serif;
 	font-weight: 700;
 	letter-spacing: -0.32px;
 	span {
-		position: absolute;
-		top: 50%;
-		left: 20px;
-		transform: translateY(-50%);
+		position: relative;
 		z-index: 2;
 		&:after {
 			content: url(../img/icons/arrow-right_white.svg);
@@ -93,9 +106,9 @@ $Ruda: "Ruda", serif;
 		border-radius: 25px;
 		border: 2px solid $blue;
 		border-left: none;
-		width: 40%;
+		width: 100%;
 		height: 100%;
-		background-color: #16313f;
+		background-color: rgba( $blue, .2 )
 	}
 	&:after {
 		transition: .4s;
@@ -103,12 +116,22 @@ $Ruda: "Ruda", serif;
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 120px;
+		width: 78%;
 		height: 100%;
 		border: 2px solid #272727;
-		border-right: none;
+		border-right: none !important;
 		background-color: #101010;
 		border-radius: 25px 0 0 25px;
+	}
+	&.white {
+		color: #0b0b0b;
+		span:after {
+			content: url(../img/icons/arrow-right_blue.svg);
+		}
+		&:after {
+			border: 2px solid #e6e6e6;
+			background-color: #ffffff;
+		}
 	}
 	&:hover {
 		&:before {
@@ -119,7 +142,48 @@ $Ruda: "Ruda", serif;
 		&:after {
 			transition: .4s;
 			width: 0;
-			border: none;
+			border: transparent;
+		}
+	}
+}
+h3 {
+	color: #0b0b0b;
+	font-family: $Ruda;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: -0.52px;
+}
+.product-rating {
+	.rating_starOff {
+		overflow: hidden;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+	.rating_starOff, .rating_starOn {
+	    width: 85px;
+        height: 13px;
+	    background: url(../img/stars-light.png) repeat-x left bottom;
+	}
+	.rating_starOn {
+		width: 0;
+		cursor: pointer;
+	    display: block;
+	    background-position: left top !important;
+	}
+	.quantity-reviews {
+		text-shadow: 0 15px 35px #000000;
+		color: #7e7e7e;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: -0.28px;
+	}
+	&.reviews {
+		.rating_starOff, .rating_starOn {
+			width: 100px;
+	        height: 15px;
+	    	background: url(../img/uranus/big-stars.png) repeat-x left bottom;
+		}
+		.rating_starOff {
 		}
 	}
 }

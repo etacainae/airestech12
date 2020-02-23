@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Airestech</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <link rel="shortcut icon" href="img/fav.png" type="image/x-icon"> -->
+	<link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+	<header class="on-white">
+		<div class="container">
+			<a class="logo" href="#"></a>
+			<nav class="main-menu">
+				<ul>
+					<li data-content="Store">
+						<a href="#">Store</a>
+					</li>
+					<li data-content="Instructions">
+						<a href="#">Instructions</a>
+					</li>
+					<li data-content="About Us">
+						<a href="#">About Us</a>
+					</li>
+					<li data-content="Investors">
+						<a href="#">Investors</a>
+					</li>
+					<li data-content="Technology">
+						<a href="#">Technology</a>
+					</li>
+					<li data-content="Media">
+						<a href="#">Media</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-menu">
+				<div class="user-account">
+					<div class="active-account">
+						<span class="user-name">Calvin Parker</span>
+					</div>
+				</div>
+				<hr>
+				<div class="cart-informer">
+					<span class="cart-counter">3</span>
+					<span class="cart-total">$ 345.55</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="cart">
+			<div class="container-border">
+				<div class="container">
+					<h2 class="main-title">My Cart</h2>
+					<div class="cart">
+						<table>
+							<thead>
+								<tr>
+									<th class="product-info" width="520">Product</th>
+									<th class="product-price" width="390">Price</th>
+									<th class="product-quantity">Quantity</th>
+									<th class="product-total" width="140">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="cart-item">
+									<td class="product-info">
+										<div class="remove">×</div>
+										<div class="product-image" style="background-image: url(img/cart/1.jpg);"></div>
+										<div class="product-name">
+											Aires Shield <br>Pro
+										</div>
+									</td>
+									<td class="product-price">$ 49.99</td>
+									<td class="product-quantity">
+										<div class="amount gray">
+											<span class="minus"></span>
+											<input class="amount-input" type="number" min="1" name="amount" value="1" max="50">
+											<span class="plus"></span>
+										</div>
+									</td>
+									<td class="product-total">$ 49.99</td>
+								</tr>
+								<tr class="cart-item">
+									<td class="product-info">
+										<div class="remove">×</div>
+										<div class="product-image" style="background-image: url(img/cart/2.jpg);"></div>
+										<div class="product-name">
+											Aires Shield <br>Pro
+										</div>
+									</td>
+									<td class="product-price">$ 179.99</td>
+									<td class="product-quantity">
+										<div class="amount gray">
+											<span class="minus"></span>
+											<input class="amount-input" type="number" min="1" name="amount" value="2" max="50">
+											<span class="plus"></span>
+										</div>
+									</td>
+									<td class="product-total">$ 359.98</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="6" class="actions">
+										<div class="coupon">
+											<input type="text" name="coupon_code" class="coupon-input" placeholder="Type Coupon Code…">
+											<button type="submit" class="coupon-button" name="apply_coupon" value="Apply coupon"></button>
+										</div>
+										<a class="update-cart btn" href="#">Update Cart</a>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="cart-bottom">
+			<div class="container">
+				<div class="col">
+					<h3>Cart Totals</h3>
+				</div>
+				<div class="cart-totals">
+					<div class="stock">
+						<h2 class="main-title white">Get Free Shipping!</h2>
+						<p class="desc">When you add one more item</p>
+						<p class="bottom-desc">
+							Aires Shield Pro for C$ 64.95
+						</p>
+						<a class="btn-white" href="#">More Info</a>
+					</div>
+					<ul class="cart-totals-list">
+						<li class="cart-totals-list__item">
+							<div class="cart-totals-list__item-label">
+								Subtotal
+							</div>
+							<div class="cart-totals-list__item-value">
+								$ 179.99
+							</div>
+						</li>
+						<li class="cart-totals-list__item">
+							<div class="cart-totals-list__item-label">
+								Family Pack	
+							</div>
+							<div class="cart-totals-list__item-value">
+								- $ 40.50
+							</div>
+						</li>
+						<li class="cart-totals-list__item">
+							<div class="cart-totals-list__item-label">
+								Shipping
+							</div>
+							<div class="cart-totals-list__item-desc">
+								<span class="blue">Free Shipping</span> on 2 or more items
+							</div>
+						</li>
+						<li class="cart-totals-list__item">
+							<div class="cart-totals-list__item-label">
+								Total
+							</div>
+							<div class="cart-totals-list__item-value">
+								$ 364.47
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col">
+					<a class="btn" href="#">Proceed to Checkout</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer-column">
+				<a class="logo" href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<div class="copyright">
+					<p>© 2020 airestech,</p>
+					<p>All rights reserved</p>
+				</div>
+				<div class="soc-networks">
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/facebook.svg" alt="">
+						</a>
+					</div>
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="">
+						</a>
+					</div>
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/twitter.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-column menu-column">
+				<ul class="footer-menu">
+					<li>
+						<a class="footer-menu__link" href="#">Store</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Instructions</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">About Us</a>
+					</li>
+				</ul>
+				<ul class="footer-menu">
+					<li>
+						<a class="footer-menu__link" href="#">Investors</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Technology</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Media</a>
+					</li>
+				</ul>
+				<hr>
+			</div>
+			<div class="footer-column subscription">
+				<h4>Don’t Miss Out</h4>
+				<p class="desc">Subscribe to get special discounts and deals</p>
+				<form class="subscription-form">
+					<input rows="1" placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
+					<button type="submit" class="subscription-form__btn"></button>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

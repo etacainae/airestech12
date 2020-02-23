@@ -12,9 +12,7 @@
 <body>
 	<header>
 		<div class="container">
-			<a class="logo" href="#">
-				<img src="img/logo.svg" alt="">
-			</a>
+			<a class="logo" href="#"></a>
 			<nav class="main-menu">
 				<ul>
 					<li data-content="Store">
@@ -53,7 +51,7 @@
 		<section id="main">
 			<div class="container">
 				<div class="product-img">
-					<div class="img-wrap" style="background-image: url(img/main-img.png);"></div>
+					<div class="img-wrap" style="background-image: url(img/uranus/main-product.png);"></div>
 					<a href="#" class="read-more">Read more</a>
 				</div>
 				<div class="product-info">
@@ -103,7 +101,7 @@
                     	<div class="to-cart border-top">
                     		<div class="amount">
                     			<span class="minus"></span>
-                    			<input class="amount-input" type="text" name="amount" value="1" data-max="50">
+                    			<input class="amount-input" type="number" min="1" name="amount" value="1" max="50">
                     			<span class="plus"></span>
                     		</div>
                     		<a class="btn cart-btn" href="">Add to Cart</a>
@@ -203,10 +201,14 @@
 							</li>
 						</ul>
 					</div>
-					<div class="img-wrap">
-						<div class="img-slider">
-							<img src="img/slider-img1.jpg" alt="">
-							<img src="img/slider-img1.jpg" alt="">
+					<div class="devices-slider">
+						<div class="devices-slider__wrap">
+							<div class="devices-slider__wrap-item">
+								<div class="img" style="background-image: url(img/slider-img1.jpg);"></div>
+							</div>
+							<div class="devices-slider__wrap-item">
+								<div class="img" style="background-image: url(img/slider-img1.jpg);"></div>
+							</div>
 						</div>
 						<div class="devices-arrow prev-arrow"></div>
 						<div class="devices-arrow next-arrow"></div>
@@ -218,37 +220,56 @@
 			<div class="container">
 				<div class="structure-content">
 					<ul class="structure-list">
-						<li class="structure-list__item">
+						<li class="structure-list__item" id="num-1">
 							<span class="number">01</span>
 							<span class="text">
 								Lorem ipsum dolor sit amet, no vis facete equidem scripserit, te eos idque harum voluptaria, per an fugit molestiae.
 							</span>
 						</li>
-						<li class="structure-list__item">
+						<li class="structure-list__item" id="num-2">
 							<span class="number">02</span>
 							<span class="text">
 								Lorem ipsum dolor sit amet, no vis facete equidem scripserit, te eos idque harum voluptaria, per an fugit molestiae.
 							</span>
 						</li>
-						<li class="structure-list__item">
+						<li class="structure-list__item" id="num-3">
 							<span class="number">03</span>
 							<span class="text">
 								Lorem ipsum dolor sit amet, no vis facete equidem scripserit, te eos idque harum voluptaria, per an fugit molestiae.
 							</span>
 						</li>
-						<li class="structure-list__item">
+						<li class="structure-list__item" id="num-4">
 							<span class="number">04</span>
 							<span class="text">
 								Lorem ipsum dolor sit amet, no vis facete equidem scripserit, te eos idque harum voluptaria, per an fugit molestiae.
 							</span>
 						</li>
-						<li class="structure-list__item">
+						<li class="structure-list__item" id="num-5">
 							<span class="number">05</span>
 							<span class="text">
 								Lorem ipsum dolor sit amet, no vis facete equidem scripserit, te eos idque harum voluptaria, per an fugit molestiae.
 							</span>
 						</li>
 					</ul>
+					<div class="structure-img">
+						<ul class="structure-img__numbers">
+							<li class="number" data-id="num-1" style="right: -10px; top: 110px">
+								<span>01</span>
+							</li>
+							<li class="number" data-id="num-2" style="right: 250px; top: 343px">
+								<span>02</span>
+							</li>
+							<li class="number" data-id="num-3" style="right: 431px; top: 163px;">
+								<span>03</span>
+							</li>
+							<li class="number" data-id="num-4" style="right: 600px;top: 380px;">
+								<span>04</span>
+							</li>
+							<li class="number" data-id="num-5" style="right: 760px;top: 220px;">
+								<span>05</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<a class="btn-animate" href=""><span>Read More</span></a>
 			</div>
@@ -261,32 +282,8 @@
 					Shield <span class="blue">Pro</span>
 				</h2>
 				<ul class="news-icons-list">
-					<li class="news-icons-list__line">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="153.5" viewBox="0 0 7 153.5">
-						  <defs>
-						    <linearGradient x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
-						      <stop offset="0" stop-color="#d5f0fe"/>
-						      <stop offset="0.488" stop-color="#2db2fa"/>
-						      <stop offset="1" stop-color="#d5f0fe"/>
-						    </linearGradient>
-						  </defs>
-						  <g transform="translate(0 0.15)">
-						    <line id="Line_38" data-name="Line 38" y2="152" transform="translate(3.5 0.6)" fill="none" stroke="#d5f0fe" stroke-linecap="round" stroke-width="1.5"/>
-						    <rect width="1.5" height="153" rx="0.75" transform="translate(2.7)" fill="url(#linear-gradient)"/>
-						    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(0 9.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
-						      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
-						      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
-						    </g>
-						    <g transform="translate(0 73.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
-						      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
-						      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
-						    </g>
-						    <g transform="translate(0 137.1)" fill="#fff" stroke="#2db2fa" stroke-width="1.5">
-						      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
-						      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
-						    </g>
-						  </g>
-						</svg>
+					<li class="s">
+						
 					</li>
 					<li class="news-icons-list__item">
 						<img src="img/new-1.svg" alt="">

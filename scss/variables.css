@@ -12,6 +12,16 @@
   margin-left: auto;
   margin-right: auto; }
 
+.container-border {
+  background-color: #fff;
+  height: 100%;
+  border-left: 2px solid #e6e6e6;
+  border-right: 2px solid #e6e6e6;
+  max-width: 1640px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .main-title {
   font-family: "Ruda", serif;
   font-size: 50px;
@@ -37,11 +47,6 @@
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.32px; }
-  .btn:after {
-    content: url(../img/icons/btn-border.svg);
-    position: absolute;
-    right: 0;
-    bottom: -4px; }
   .btn.cart-btn:before {
     content: '';
     -webkit-transform: translateY(2px);
@@ -71,6 +76,59 @@
     width: 16px;
     height: 16px;
     margin-right: 14px; }
+
+.o-btn {
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: 0 20px;
+  line-height: 50px;
+  border-radius: 25px;
+  border: 2px solid #2db2f9;
+  background-color: rgba(45, 178, 250, 0.2);
+  color: #2db2fa;
+  font-family: "Ruda", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.36px; }
+  .o-btn:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
+            box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
+    background-color: #2db2fa;
+    color: #ffffff; }
+
+.btn-2 {
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: block;
+  padding: 0 20px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: rgba(230, 230, 230, 0.3);
+  color: #b2b2b2;
+  font-family: "Ruda", serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.32px; }
+  .btn-2:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
+            box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
+    background-color: #2db2fa;
+    color: #fff; }
+
+.btn-white {
+  padding: 0 20px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #2db2fa;
+  font-family: "Ruda", serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.32px; }
 
 .btn-animate {
   overflow: hidden;
@@ -142,6 +200,71 @@ h3 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.52px; }
+
+.amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 22px; }
+  .amount .minus, .amount .plus {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 34px;
+    border: 2px solid #2db2fa;
+    line-height: 40px;
+    border-radius: 0 22px 22px 0;
+    background-color: rgba(45, 178, 250, 0.2);
+    font-size: 14px;
+    color: #fff; }
+    .amount .minus:before, .amount .plus:before {
+      content: '';
+      width: 10px;
+      height: 2px;
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .amount .minus {
+    border-radius: 22px 0 0 22px;
+    border-right: none; }
+  .amount .plus {
+    border-left: none; }
+    .amount .plus:after {
+      content: '';
+      width: 2px;
+      height: 10px;
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .amount-input {
+    width: 55px;
+    text-align: center;
+    border-top: 2px solid #272727;
+    border-bottom: 2px solid #272727;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Ruda", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.32px; }
+  .amount.gray .minus, .amount.gray .plus {
+    border-color: #adb1b4;
+    background-color: #f8f8f8; }
+    .amount.gray .minus:before, .amount.gray .minus:after, .amount.gray .plus:before, .amount.gray .plus:after {
+      background-color: #adb1b4; }
+  .amount.gray .amount-input {
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    color: #b2b2b2; }
 
 .product-rating .rating_starOff {
   overflow: hidden;

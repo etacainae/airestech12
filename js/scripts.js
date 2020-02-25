@@ -55,3 +55,10 @@ $(document).ready(function() {
           input[0].stepDown();
    });
 });
+$('#homepage-instagram .instagram-slider').slick({
+    infinity: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: false,
+  });

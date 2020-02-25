@@ -60,4 +60,5 @@ button {
   outline: none; }
 
 table, tr, th {
+  border-collapse: collapse;
   border: none; }

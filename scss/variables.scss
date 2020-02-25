@@ -15,6 +15,7 @@ $Ruda: "Ruda", serif;
 	margin-right: auto;
 }
 .container-border {
+	position: relative;
 	background-color: #fff;
 	height: 100%;
 	border-left: 2px solid #e6e6e6;
@@ -36,6 +37,13 @@ $Ruda: "Ruda", serif;
 	&.white {
 		color: #fff;
 	}
+}
+h3 {
+	color: #0b0b0b;
+	font-family: $Ruda;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: -0.52px;
 }
 .btn {
 	transition: .2s;
@@ -86,7 +94,7 @@ $Ruda: "Ruda", serif;
 .o-btn {
 	transition: .2s;
 	padding: 0 20px;
-	line-height: 50px;
+	line-height: 46px;
 	border-radius: 25px;
 	border: 2px solid #2db2f9;
 	background-color: rgba( $blue, .2 );
@@ -201,13 +209,6 @@ $Ruda: "Ruda", serif;
 			border: transparent;
 		}
 	}
-}
-h3 {
-	color: #0b0b0b;
-	font-family: $Ruda;
-	font-size: 26px;
-	font-weight: 700;
-	letter-spacing: -0.52px;
 }
 .amount {
 	display: flex;

@@ -13,6 +13,7 @@
   margin-right: auto; }
 
 .container-border {
+  position: relative;
   background-color: #fff;
   height: 100%;
   border-left: 2px solid #e6e6e6;
@@ -32,6 +33,13 @@
     color: #2db2fa; }
   .main-title.white {
     color: #fff; }
+
+h3 {
+  color: #0b0b0b;
+  font-family: "Ruda", serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.52px; }
 
 .btn {
   -webkit-transition: .2s;
@@ -81,7 +89,7 @@
   -webkit-transition: .2s;
   transition: .2s;
   padding: 0 20px;
-  line-height: 50px;
+  line-height: 46px;
   border-radius: 25px;
   border: 2px solid #2db2f9;
   background-color: rgba(45, 178, 250, 0.2);
@@ -193,13 +201,6 @@
     transition: .4s;
     width: 0;
     border: transparent; }
-
-h3 {
-  color: #0b0b0b;
-  font-family: "Ruda", serif;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.52px; }
 
 .amount {
   display: -webkit-box;

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Airestech</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <link rel="shortcut icon" href="img/fav.png" type="image/x-icon"> -->
+	<link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+	<header class="on-white">
+		<div class="container">
+			<a class="logo" href="#"></a>
+			<div class="burger-btn">
+				<img src="img/icons/burger-menu.svg" alt="">
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li data-content="Store">
+						<a href="#">Store</a>
+					</li>
+					<li data-content="Instructions">
+						<a href="#">Instructions</a>
+					</li>
+					<li data-content="About Us">
+						<a href="#">About Us</a>
+					</li>
+					<li data-content="Investors">
+						<a href="#">Investors</a>
+					</li>
+					<li data-content="Technology">
+						<a href="#">Technology</a>
+					</li>
+					<li data-content="Media">
+						<a href="#">Media</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-menu">
+				<div class="user-account">
+					<div class="active-account">
+						<span class="user-name">Calvin Parker</span>
+					</div>
+				</div>
+				<hr>
+				<div class="cart-informer">
+					<span class="cart-counter">3</span>
+					<span class="cart-total">$ 345.55</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="account">
+			<div class="container-border">
+				<div class="container">
+					<div class="account-sidebar">
+						<div class="user-nav">
+							<div class="user-info">
+								<span class="user-name">Calvin Parker</span>
+								<span class="user-mail">calvinparker@gmail.com</span>
+							</div>
+							<div class="mobile-btn">
+								<img src="img/icons/user-white.svg" alt="">
+							</div>
+							<div class="sidebar-menu">
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__item-link dashboard" href="#">Dashboard</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__item-link orders" href="#">Orders</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__item-link addresses" href="#">Addresses</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__item-link account-details" href="#">Account details</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__item-link contributions" href="#">Contributions</a>
+								</li>
+							</div>
+						</div>
+						<div class="logout">Log Out</div>
+					</div>
+					<div class="content order-details">
+						<div class="header">
+							<h2 class="main-title">Order <span class="blue">#423</span></h2>
+							<ul class="checkout-info">
+								<li class="checkout-info__item">
+									<div class="checkout-info__item-label">Was Placed on:</div>
+									<div class="checkout-info__item-value">07 Feb 2020</div>
+								</li>
+								<li class="checkout-info__item">
+									<div class="checkout-info__item-label">Status:</div>
+									<div class="checkout-info__item-value">Processing</div>
+								</li>
+							</ul>
+						</div>
+						<div class="body">
+							<h3>Order details</h3>
+							<ul class="details-list">
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										Product
+									</div>
+									<div class="details-list__item-value">
+										Total
+									</div>
+								</li>
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										Aires Shield
+										Pro
+									</div>
+									<div class="details-list__item-quantity">
+										<input class="details-list__item-quantity__input" type="text" size="3" value="2" readonly>
+										<a class="back-to-product" href="#"></a>
+									</div>
+									<div class="details-list__item-value">
+										C$ 64.95
+									</div>
+								</li>
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										Subtotal
+									</div>
+									<div class="details-list__item-value">
+										C$ 64.95
+									</div>
+								</li>
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										Shipping
+									</div>
+									<div class="details-list__item-desc">
+										via Flat Rate <br>
+										North America
+									</div>
+									<div class="details-list__item-value">
+										C$ 9.99
+									</div>
+								</li>
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										HST (13%)
+									</div>
+									<div class="details-list__item-value">
+										C$ 9.74
+									</div>
+								</li>
+								<li class="details-list__item">
+									<div class="details-list__item-label">
+										Payment method
+									</div>
+									<div class="details-list__item-value">
+										Credit Card (Stripe)
+									</div>
+								</li>
+								<li class="details-list__item total">
+									<div class="details-list__item-label">
+										Total
+									</div>
+									<div class="details-list__item-value">
+										C$ 84.68
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="footer address">
+							<div class="address-item">
+								<h3>Billing <br>Address</h3>
+								<div class="address-block">
+									<div class="user-name">
+										Calvin Parker
+									</div>
+									<ul class="address-block__list">
+										<li class="address-block__list-item" style="background-image: url(img/icons/location-gray.svg);">
+											<p>231 Millway Ave Unit 1 Concord</p>
+											<p>ON  L4K 3W7</p>
+										</li>
+										<li class="address-block__list-item" style="background-image: url(img/icons/phone-gray.svg);">
+											<p>555 555 555</p>
+										</li>
+										<li class="address-block__list-item" style="background-image: url(img/icons/email-gray.svg);">
+											<p>oleg+test1@adwave.ca</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="address-item">
+								<h3>Shipping <br>Address</h3>
+								<div class="address-block">
+									<div class="user-name">
+										Calvin Parker
+									</div>
+									<ul class="address-block__list">
+										<li class="address-block__list-item" style="background-image: url(img/icons/location-gray.svg);">
+											<p>231 Millway Ave Unit 1 Concord</p>
+											<p>ON  L4K 3W7</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="logo-mobile">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<div class="footer-column main">
+				<a class="logo" href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<div class="copyright">
+					<p>© 2020 airestech,&nbsp;</p>
+					<p>All rights reserved</p>
+				</div>
+				<div class="soc-networks">
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/facebook.svg" alt="">
+						</a>
+					</div>
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="">
+						</a>
+					</div>
+					<div class="soc-networks__item">
+						<a href="#">
+							<img src="img/icons/twitter.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-column menu-column">
+				<ul class="footer-menu">
+					<li>
+						<a class="footer-menu__link" href="#">Store</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Instructions</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">About Us</a>
+					</li>
+				</ul>
+				<ul class="footer-menu">
+					<li>
+						<a class="footer-menu__link" href="#">Investors</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Technology</a>
+					</li>
+					<li>
+						<a class="footer-menu__link" href="#">Media</a>
+					</li>
+				</ul>
+				<hr>
+			</div>
+			<div class="footer-column subscription">
+				<h4>Don’t Miss Out</h4>
+				<p class="desc">Subscribe to get special discounts and deals</p>
+				<form class="subscription-form">
+					<input rows="1" placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
+					<button type="submit" class="subscription-form__btn"></button>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

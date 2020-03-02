@@ -1,3 +1,8 @@
+$blue: #2db2fa;
+$darken-blue: desaturate(lighten($blue, 1%), 1%);
+$dark: #101010;
+$text-dark: #0b0b0b;
+$Ruda: "Ruda", serif;
 @media screen and (min-width:1921px){
 	
 }
@@ -32,6 +37,7 @@
 		}
 	}
 	section#structure {
+		height: auto;
 		padding-bottom: 0;
 		.container {
 			padding-bottom: 90px;
@@ -133,6 +139,21 @@
 		}
 	}
 }
+@media screen and (max-width:1300px) {
+	section#technology.about-us {
+		.text-wrap {
+			order: 1;
+		}
+		.about-technology-table {
+			margin-top: 60px;
+			order: 2;
+			display: flex;
+			&__row {
+				width: auto;
+			}
+		}
+	}
+}
 @media screen and (min-width:993px) and (max-width:1260px) {
 	section.account .content {
 		width: 700px;
@@ -149,8 +170,28 @@
 			}
 		}
 	}
-}
+} 
 @media screen and (max-width:1200px) {
+	.container-border {
+		border-left: none;
+		border-right: none;
+	}
+	header {
+		padding-top: 20px;
+		.logo {
+			order:1;
+		}
+		.main-menu {
+			order: 3;
+			width: 100%;
+		}
+		.user-menu {
+			order: 2;
+		}
+	}
+	section#main .footer .read-more {
+		margin-left: 0;
+	}
 	section#devices {
 		padding-top: 80px;
 		.devices-wrap {
@@ -213,6 +254,49 @@
 			}
 		}
 	}
+	section#history.about-us {
+		.history-img {
+			right: -40px;
+			top: inherit;
+			bottom: -136px;
+		}
+	}
+	section#main-technology {
+		.list-block {
+			justify-content: space-around;
+			margin-top: 5px;
+			&__item {
+				margin-bottom: 0;
+				margin-top: 30px;
+				max-width: 100%;
+				.title-wrap {
+					padding: 20px 30px;
+					&:before, &:after {
+						width: 57px;
+					}
+				}
+			}
+		}
+	}
+	section.technology-section .top-text .main-title {
+		font-size: 32px;
+	}
+	section#advantages.homepage .advantages-wrap {
+		justify-content: space-around;
+	}
+	section#homepage-desc {
+		.text-wrap {
+			max-width: 45%;
+		}
+		.image {
+			margin-right: 0;
+			position: absolute;
+			top: 50%;
+			right: -8px;
+			transform: translateY(-35%);
+			max-width: 43%;
+		}
+	}
 }
 @media screen and (min-width:768px) and (max-width:1200px){
 	section#main {
@@ -272,27 +356,33 @@
 	section#store-protection .protection-wrap {
 		justify-content: space-around;
 	}
-}
-@media screen and (max-width:1023px){
-	.container-border {
-		border-left: none;
-		border-right: none;
-	}
-	header {
-		padding-top: 20px;
-		.logo {
-			order:1;
-		}
-		.main-menu {
-			order: 3;
-			width: 100%;
-		}
-		.user-menu {
-			order: 2;
+	section#results.about-us .results-wrap__item {
+		padding-left: 0;
+		h3 {
+			display: flex;
+			align-items: center;
+			min-height: 63px;
+			padding-left: 75px;
+			br {
+				display: none;
+			}
 		}
 	}
-	section#main .footer .read-more {
-		margin-left: 0;
+	section#home-main.homepage {
+		padding-top: 131px;
+		.home-main-table {
+			max-width: 100%;
+			&__row {
+				max-width: 100%;
+			}
+		}
+		.home-main-img {
+		    bottom: 45px;
+		    right: -140px;
+			img {
+				width: 840px;
+			}
+		}
 	}
 }
 @media screen and (max-width:992px){
@@ -429,6 +519,98 @@
 			
 		}
 	}
+	section#history.about-us {
+		.history-img {
+			right: -125px;
+			top: inherit;
+			bottom: -75px;
+		}
+		.section-desc {
+			.flow-around {
+				display: block;
+			}
+		}
+	}
+	section#results.about-us .results-wrap__item {
+		max-width: 48%;
+		padding-left: 0;
+		h3 {
+			br {
+				display: inline;
+			}
+		}
+		&.image-item {
+			display: none;
+		}
+	}
+	section#main-technology {
+		margin-bottom: 20px;
+	}
+	section.technology-section {
+		margin-top: 60px;
+		.top-text {
+			align-items: flex-start;
+			.icon {
+				margin-top: 6px;
+				margin-right: 20px;
+				background-color: transparent;
+				width: auto;
+				height: auto;
+			}
+			.o-btn {
+				display: none;
+			}
+			.mobile-open {
+				margin-top: 6px;
+				transition: .2s;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				width: 24px;
+				height: 24px;
+				border-radius: 14px;
+				background-color: #36b4f9;
+				&:before {
+					content: url(../img/icons/arrow-down-white.svg);
+					position: absolute;
+					top: 0;
+				}
+				&.active {
+					transform: rotate(180deg);
+					transition: .2s;
+				}
+			}
+		}
+		.technology-posts {
+			justify-content: space-around;
+			margin-top: 10px;
+			&__item {
+				margin-top: 30px;
+				max-width: 100%;
+				width: 100%;
+				&.big-item {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+		}
+	}
+	section.technology-section.our-team {
+		padding-bottom: 90px;
+		.technology-posts {
+			&__item {
+				max-width: 48%;
+				margin-top: 64px;
+				padding-bottom: 30px;
+				.post-desc {
+					padding-bottom: 20px;
+				}
+				.post-footer {
+					padding-top: 20px;
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width:767px) {
 	.main-title {
@@ -466,6 +648,9 @@
 				}
 			}
 		}
+	}
+	body {
+		font-size: 15px;
 	}
 	section#main {
 		background-image: none;
@@ -568,8 +753,6 @@
 		}
 	}
 	section#advantages {
-		background-position: 115% 16%;
-		background-size: 350%;
 		.advantages-wrap {
 			justify-content: flex-start;
 			flex-direction: column;
@@ -578,11 +761,15 @@
 			width: auto;
 			margin: 0 auto;
 			&__item {
+				padding-left: 86px;
 				.text-wrap {
 					width: 100%;
 					h3 {
 						margin-bottom: 20px;
 						font-size: 24px;
+						br {
+							display: none;
+						}
 					}
 					.line {
 						width: 100%;
@@ -657,8 +844,19 @@
 		}
 	}
 	section#news {
-		background-image: none;
 		height: auto;
+		padding-bottom: 0;
+		background: none;
+		&:after {
+			content: '';
+			height: 92px;
+			width: 100%;
+			display: block;
+			border-top: 2px solid #e6e6e6;
+			background-image: url(../img/uranus/news-bg-mobile.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
 		.main-title {
 			max-width: 330px;
 		}
@@ -816,8 +1014,12 @@
 		}
 	}
 	section#products {
+		background: none;
 		padding-top: 80px;
 		padding-bottom: 90px;
+		.container-border:before {
+			display: none;
+		}
 		.main-title br {
 			display: none;
 		}
@@ -1086,6 +1288,591 @@
 		}
 	}
 	// account pages end
+	// about
+	section.about-us .section-desc {
+		margin-top: 3px;
+	}
+	section#history.about-us {
+		border-bottom: none;
+		.container-border {
+			padding-bottom: 90px;
+			background-size: 95%;
+			background-position: 666% 100%;
+		}
+		.container {
+			padding-bottom: 160px;
+   	 		border-bottom: 2px solid #e6e6e6;
+		}
+	}
+	section#technology.about-us {
+		.container {
+			padding-top: 0;
+			padding-bottom: 88px;
+		}
+		.about-technology-table {
+			width: 100%;
+			display: flex;
+			position: relative;
+			&:before {
+				z-index: 1;
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-image: linear-gradient(to top, #d5f0fe 0%, $blue 49%, #d5f0fe 100%);
+				width: 100%;
+				height: 2px;
+			}
+			&__row {
+				width: 33%;
+				justify-content: flex-end;
+				&.right {
+					width: 66%;
+					justify-content: space-between;
+					.about-technology-table__item {
+						width: 50%;
+					}
+				}
+			}
+			&__item {
+				position: relative;
+				padding: 0;
+				padding-top: 22px;
+				width: 100%;
+				height: auto;
+				border: none;
+				&:before {
+					z-index: 2;
+					content: '';
+					position: absolute;
+					left: 50%;
+					top: -2px;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+					width: 7px;
+					height: 7px;
+					border: 2px solid #2db2fa;
+					border-radius: 50%;
+					background-color: #ffffff;
+				}
+				p {
+					max-width: 130px;
+					margin-top: 18;
+				}
+				&:hover {
+					box-shadow: none;
+					border-color: none;
+				}
+			}
+		}
+	}
+	section#funding.about-us {
+		padding-top: 90px;
+		padding-bottom: 350px;
+		height: auto;
+		background-image: none;
+		.container {
+			padding-top: 0;
+		}
+		&:after {
+			background-image: url(../img/about-us/bg-mobile.png);
+			top: inherit;
+			bottom: 0;
+			height: 400px;
+		}
+	}
+	section#path.about-us {
+		.container {
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+		.section-desc {
+			font-size: 15px;
+			max-width: 100%;
+		}
+		.img-wrap {
+			margin-top: 52px;
+			margin-bottom: 90px;
+			max-width: 100%;
+		}
+	}
+	section#results.about-us {
+		padding-bottom: 90px;
+		.container {
+			padding-top: 90px;
+		}
+		.main-title br {
+			display: none;
+		}
+		.results-wrap {
+			margin-top: 25px;
+			justify-content: center;
+			&__item {
+				max-width: 100%;
+				margin-top: 35px;
+				padding-left: 0;
+				h3 {
+					display: flex;
+					align-items: center;
+					min-height: 63px;
+					padding-left: 75px;
+					br {
+						display: none;
+					}
+				}
+				&.image-item {
+					display: none;
+				}
+			}
+		}
+	}
+	// about
+	// cart
+	section#cart {
+		.container {
+			padding-top: 45px;
+		}
+		.cart {
+			table {
+				margin-top: 15px;
+				thead {
+					display: none;
+				}
+				tbody {
+					tr {
+						padding-bottom: 30px;
+					}
+					.cart-item {
+						position: relative;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+						td {
+							padding: 0;
+							padding-top: 30px;
+							&.product-info {
+								width: 100%;
+								align-items: flex-start;
+								.product-image {
+									order: 1;
+								}
+								.product-name {
+									padding-top: 10px;
+									order: 2;
+									br {
+										display: none;
+									}
+								}
+								.remove {
+									padding: 10px;
+									padding-right: 0;
+									order: 3;
+									margin-left: auto;
+								    margin-right: 0;
+									span {
+										display: none;
+									}
+									img {
+										display: block;
+									}
+								}
+							}
+							&.product-price {
+								position: absolute;
+								left: 110px;
+								top: 40px;
+							}
+							&.product-total {
+								.product-total__label {
+									margin-right: 38px;
+									color: #b2b2b2;
+									font-size: 16px;
+									font-weight: 400;
+									letter-spacing: -0.32px;
+									line-height: 22px;
+								}
+								.product-total__value {
+									color: #2db2fa;
+									font-family: $Ruda;
+									font-size: 18px;
+									font-weight: 700;
+									letter-spacing: -0.36px;
+								}
+							}
+						}
+					}
+				}
+				tfoot td.actions {
+					padding-top: 10px;
+					.coupon-input {
+						margin-right: -40px;
+					}
+				}
+			}
+		}
+	}
+	// cart
+	// store
+	section#store-main {
+		background-image: none;
+		border-bottom: none;
+		.container {
+			padding-top: 50px;
+			padding-bottom: 0;
+		}
+		.text-wrap {
+			display: none;
+		}
+		.text-mobile {
+			width: 100%;
+			text-align: center;
+			display: block;
+			color: #0b0b0b;
+			font-family: $Ruda;
+			font-size: 26px;
+			font-weight: 700;
+			letter-spacing: -0.52px;
+			line-height: 50px;
+			.blue {
+				color: #36b4f9;
+			}
+			hr {
+				margin: 0 auto;
+				width: 81px;
+				height: 2px;
+				background-color: #cecece;
+				opacity: 0.5;
+			}
+			&:after {
+				content: '';
+				display: block;
+			    background-image: url(../img/icons/decorate-arrow-store.svg);
+			    background-repeat: no-repeat;
+			    background-position: center bottom;
+			    margin-top: 24px;
+			    width: 100%;
+			    height: 35px;
+			    border-top: 3px solid #36b4f9;
+			}
+		}
+	}
+	section#store-questions {
+		padding-top: 0;
+		padding-bottom: 90px;
+		.questions-wrap {
+			&__item {
+				padding-top: 30px;
+				padding-bottom: 27px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				td {
+					padding: 0;
+					&.question-mobile {
+						margin-bottom: 18px;
+						order: 1;
+						display: block;
+						width: 100%;
+						h3 {
+							max-width: 312px;
+						}
+					}
+					&.question {
+						order: 3;
+						h3 {
+							display: none;
+						}
+						.opportunities {
+							margin-top: 20px;
+							max-width: 186px;
+						}
+					}
+					&.quantity {
+						order: 4;
+						margin-top: 20px;
+					}
+					&.product {
+						order: 2;
+						margin-top: 20px;
+					}
+				}
+				.opportunities-label {
+					display: block;
+					width: 100%;
+				}
+				.opportunities-input {
+					margin-right: 16px;
+					&:after {
+						display: none;
+					}
+				}
+				.opportunities .mobile-btn {
+					order: 999;
+					margin-left: -10px;
+					display: block;
+					span {
+						margin-right: 12px;
+					}
+					a {
+						margin-left: auto;
+					}
+				}
+			}
+		}
+		.cart-btn {
+			margin-top: 30px;
+		}
+	}
+	section#store-protection {
+		.container {
+			padding-top: 30px;
+			padding-bottom: 90px;
+		}
+		.protection-wrap {
+			justify-content: space-around;
+			&__item {
+				margin-top: 60px;
+				.opportunities {
+					padding: 24px 0;
+				}
+				.protection-desc {
+					padding: 24px 0;
+				}
+				.compatibilities {
+					padding: 24px 0;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: flex-end;
+					justify-content: space-between;
+					&-label {
+						margin-right: 6px;
+						span {
+							display: none;
+						}
+					}
+					&-list {
+						&__item {
+							padding: 0;
+							margin-right: 0;
+							color: #b1b1b1;
+							border: none;
+							background: none;
+							&:after {
+								content: '';
+								display: inline-block;
+								margin-left: 4px;
+								margin-right: 6px;
+								vertical-align: middle;
+								border-radius: 50%;
+								width: 3px;
+								height: 3px;
+								background-color: #e6e6e6;
+							}
+							&:last-child:after {
+								display: none;
+							}
+						}
+					}
+				}
+				.product-preview {
+					display: flex;
+					flex-wrap: wrap;
+					padding: 28px 19px;
+					box-shadow: 0 30px 65px #efefef;
+					border-radius: 10px;
+					background-color: #ffffff;
+					&-img {
+						margin-right: 15px;
+						min-width: 106px;
+						min-height: 106px;
+						width: 106px;
+						height: 106px;
+						border-radius: 10px;
+					}
+					.text-wrap {
+						margin: 0;
+						padding: 0;
+						border: none;
+						width: auto;
+						max-width: 186px;
+					}
+					&-name {
+						font-size: 22px;
+					}
+					.product-rating {
+						order: 3;
+						width: auto;
+					}
+					&-price {
+						order: 2;
+						margin-top: 6px;
+					}
+					.btn {
+						order: 4;
+						margin-top: 8px;
+						span {
+							display: none;
+						}
+						.mobile {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
+	// store
+	// technology
+	section#main-technology .container {
+		padding-top: 14px;
+	}
+	section.technology-section .top-text .main-title br {
+		display: none;
+	}
+	// technology
+	// home
+	section#home-main.homepage {
+		padding-top: 0;
+		padding-bottom: 50px;
+		overflow: hidden;
+		background-color: transparent;
+		.container-border {
+			padding-top: 82px;
+			background-color: #101010;
+			&:before {
+				display: none;
+			}
+		}
+		.container {
+			padding-bottom: 88px;
+		}
+		.home-main-table {
+			margin-top: -1px;
+			position: static;
+			width: 100%;
+			&__row {
+				width: 100%;
+				justify-content: center;
+				&:last-child {
+					display: none;
+				}
+			}
+			&__item {
+				padding: 0 30px;
+				width: 127px;
+				height: 127px;
+				max-width: 38%;
+				p {
+					margin-top: 15px;
+					font-size: 14px;
+				}
+			}
+		}
+		.text-wrap {
+			margin-top: 45px;
+			.desc {
+				padding-right: 1px;
+				font-size: 15px;
+				margin-top: 28px;
+			}
+		}
+		.home-main-img {
+			top: inherit;
+			bottom: -243px;
+			right: -185px;
+			transform: none;
+		}
+	}
+	section#advantages.homepage {
+		margin-top: -50px;
+		padding-top: 30px;
+		padding-bottom: 90px;
+		&:before {
+			width: 50%;
+			filter: invert(1);
+		}
+	}
+	section#banner {
+		.container {
+			padding-top: 60px;
+			padding-bottom: 90px;
+		}
+		.banner-wrap {
+			&.banner1 {
+				background-image: url(../img/homepage/banner1-mobile.png);
+			}
+			&.banner2 {
+				margin-top: 30px;
+				background-image: url(../img/homepage/banner2-mobile.png);
+			}
+		}
+	}
+	section#homepage-instagram {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		.instagram-slider {
+			&__item {
+				margin: 0 11px;
+				min-width: auto;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	section#homepage-instagram {
+		padding-top: 70px;
+		.instagram-slider {
+			margin-top: 60px;
+		}
+	}
+	section#products.homepage {
+		.main-title br {
+			display: none;
+		}
+	}
+	// home
+}
+@media screen and (max-width:700px) {
+	section.technology-section.our-team .technology-posts__item {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width:460px) {
+	section#homepage-desc {
+		padding-bottom: 90px;
+		&:before {
+			display: none;
+		}
+		.container {
+			padding-top: 0;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.text-wrap {
+			max-width: 100%;
+		}
+		.section-desc {
+			max-width: 300px;
+			p {
+				margin-top: 25px;
+				display: block;
+			}
+		}
+		.flow-around {
+			display: block;
+		}
+		.image {
+			margin-right: 0;
+			position: absolute;
+			transform: none;
+			top: -22px;
+			right: -8px;
+			max-width: 53%;
+			width: 190px;
+		}
+	}
 }
 @media screen and (max-width:420px) {
 	section.account {
@@ -1120,5 +1907,18 @@
 				}
 			}
 		}
+	}
+	section#funding.about-us {
+		.main-title br {
+			display: none;
+		}
+	}
+	section#store-main {
+		.text-mobile {
+			font-size: 6.8vw;
+		}
+	}
+	section#store-questions .questions-wrap__item .quantity {
+		width: auto;
 	}
 }

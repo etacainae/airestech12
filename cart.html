@@ -70,7 +70,10 @@
 							<tbody>
 								<tr class="cart-item">
 									<td class="product-info">
-										<div class="remove">×</div>
+										<div class="remove">
+											<span>×</span>
+											<img src="img/icons/trash.svg" alt="">
+										</div>
 										<div class="product-image" style="background-image: url(img/cart/1.jpg);"></div>
 										<div class="product-name">
 											Aires Shield <br>Pro
@@ -84,14 +87,20 @@
 											<span class="plus"></span>
 										</div>
 									</td>
-									<td class="product-total">$ 49.99</td>
+									<td class="product-total">
+										<span class="product-total__label">Total:</span>
+										<span class="product-total__value">$ 49.99</span>
+									</td>
 								</tr>
 								<tr class="cart-item">
 									<td class="product-info">
-										<div class="remove">×</div>
+										<div class="remove">
+											<span>×</span>
+											<img src="img/icons/trash.svg" alt="">
+										</div>
 										<div class="product-image" style="background-image: url(img/cart/2.jpg);"></div>
 										<div class="product-name">
-											Aires Shield <br>Pro
+											Aires Defender <br>Pro
 										</div>
 									</td>
 									<td class="product-price">$ 179.99</td>
@@ -102,14 +111,17 @@
 											<span class="plus"></span>
 										</div>
 									</td>
-									<td class="product-total">$ 359.98</td>
+									<td class="product-total">
+										<span class="product-total__label">Total:</span>
+										<span class="product-total__value">$ 359.98</span>
+									</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="6" class="actions">
+									<td class="actions">
 										<div class="coupon">
-											<input type="text" name="coupon_code" class="coupon-input" placeholder="Type Coupon Code…">
+											<input type="text" name="coupon_code" class="coupon-input" placeholder="Type Coupon">
 											<button type="submit" class="coupon-button" name="apply_coupon" value="Apply coupon"></button>
 										</div>
 										<a class="update-cart btn" href="#">Update Cart</a>
@@ -121,7 +133,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="cart-bottom">
+		<section id="cart-result">
 			<div class="container">
 				<div class="col">
 					<h3>Cart Totals</h3>

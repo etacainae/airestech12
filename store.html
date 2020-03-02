@@ -56,10 +56,17 @@
 		<section id="store-main">
 			<div class="container-border">
 				<div class="container">
-					<h2 class="main-title">Create Your Own Family Pack <br><span class="blue">Save 10%</span><span class="elem">+ Get Free Shipping</span></h2>
-					<p class="desc">
-						To create your own family pack first check off which products you would like to add on the right,  then select quantities of each product to add to your cart. Once your selection is made just click the “ADD SELECTED TO CART”. Your discounts will be applied in the cart
-					</p>
+					<div class="text-wrap">
+						<h2 class="main-title">Create Your Own Family Pack <br><span class="blue">Save 10%</span><span class="elem">+ Get Free Shipping</span></h2>
+						<p class="desc">
+							To create your own family pack first check off which products you would like to add on the right,  then select quantities of each product to add to your cart. Once your selection is made just click the “ADD SELECTED TO CART”. Your discounts will be applied in the cart
+						</p>
+					</div>
+					<div class="text-mobile">
+						<p>Get <span class="blue">free shipping</span> on 2+ items</p>
+						<hr>
+						<p>Get extra <span class="blue">10% off</span> on 3+ items</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -68,9 +75,18 @@
 				<table class="questions-wrap">
 					<tbody>
 						<tr class="questions-wrap__item">
+							<td class="question-mobile">
+								<h3>How Many Devices Do You Need Protection From?</h3>
+							</td>
 							<td class="question">
 								<h3>How Many Devices Do You Need Protection From?</h3>
 								<ul class="opportunities">
+									<li class="mobile-btn">
+										<span>…</span>
+										<a href="#">
+											<img src="img/icons/arrow-right.svg" alt="">
+										</a>
+									</li>
 									<li class="opportunities-label">
 										Use on:
 									</li>
@@ -78,10 +94,10 @@
 										Cell Phones
 									</li>
 									<li class="opportunities-input">
-										Cordless Phones
+										Routers
 									</li>
 									<li class="opportunities-input">
-										Routers
+										Cordless Phones
 									</li>
 								</ul>
 							</td>
@@ -105,9 +121,18 @@
 							</td>
 						</tr>
 						<tr class="questions-wrap__item">
+							<td class="question-mobile">
+								<h3>How Many People Need Personal Protection?</h3>
+							</td>
 							<td class="question">
 								<h3>How Many People Need Personal Protection?</h3>
 								<ul class="opportunities">
+									<li class="mobile-btn">
+										<span>…</span>
+										<a href="#">
+											<img src="img/icons/arrow-right.svg" alt="">
+										</a>
+									</li>
 									<li class="opportunities-label">
 										Carry With You to Protect from:
 									</li>
@@ -139,9 +164,18 @@
 							</td>
 						</tr>
 						<tr class="questions-wrap__item">
+							<td class="question-mobile">
+								<h3>How Many Rooms Do You Want to Area Protect?</h3>
+							</td>
 							<td class="question">
 								<h3>How Many Rooms Do You Want to Area Protect?</h3>
 								<ul class="opportunities">
+									<li class="mobile-btn">
+										<span>…</span>
+										<a href="#">
+											<img src="img/icons/arrow-right.svg" alt="">
+										</a>
+									</li>
 									<li class="opportunities-label">
 										Protection for Up to 500sqft:
 									</li>
@@ -232,7 +266,7 @@
 							</div>
 							<div class="compatibilities">
 								<p class="compatibilities-label">
-									All Devices Compatible With:
+									<span>All Devices </span>Compatible With:
 								</p>
 								<ul class="compatibilities-list">
 									<li class="compatibilities-list__item">
@@ -253,7 +287,12 @@
 								</ul>
 							</div>
 							<div class="product-preview">
-								<a class="product-preview-img" style="background-image: url(img/products/photo2.jpg);"></a>
+								<a class="product-preview-img">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/cart/1.jpg">
+										<img src="img/products/photo1.jpg" alt="">
+									</picture>
+								</a>
 								<div class="text-wrap">
 									<a class="product-preview-name" href="#">Aires Shield Pro</a>
 									<div class="product-rating">
@@ -261,12 +300,11 @@
 				                            <span class="rating_starOn" style="width: 100%;"></span>
 				                        </span>
 				                    </div>
-				                    <div class="footer">
-				                    	<div class="product-preview-price">$ 49.99</div>
-				                    	<div class="btn cart-btn">
-				                    		Add to Cart
-				                    	</div>
-				                    </div>
+			                    	<div class="product-preview-price">$ 49.99</div>
+			                    	<a class="btn cart-btn" href="#">
+			                    		<span>Add to Cart</span>
+			                    		<span class="mobile">Buy Now</span>
+			                    	</a>
 								</div>
 							</div>
 						</div>
@@ -303,7 +341,7 @@
 							</div>
 							<div class="compatibilities">
 								<p class="compatibilities-label">
-									All Devices Compatible With:
+									<span>All Devices </span>Compatible With:
 								</p>
 								<ul class="compatibilities-list">
 									<li class="compatibilities-list__item">
@@ -324,7 +362,12 @@
 								</ul>
 							</div>
 							<div class="product-preview">
-								<a class="product-preview-img" style="background-image: url(img/products/photo1.jpg);"></a>
+								<a class="product-preview-img">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/cart/2.jpg">
+										<img src="img/products/photo2.jpg" alt="">
+									</picture>
+								</a>
 								<div class="text-wrap">
 									<a class="product-preview-name" href="#">Aires Defender Pro</a>
 									<div class="product-rating">
@@ -332,12 +375,11 @@
 				                            <span class="rating_starOn" style="width: 80%;"></span>
 				                        </span>
 				                    </div>
-				                    <div class="footer">
-				                    	<div class="product-preview-price">$ 199.99</div>
-				                    	<div class="btn cart-btn">
-				                    		Add to Cart
-				                    	</div>
-				                    </div>
+				                    <div class="product-preview-price">$ 199.99</div>
+			                    	<a class="btn cart-btn" href="#">
+			                    		<span>Add to Cart</span>
+			                    		<span class="mobile">Buy Now</span>
+			                    	</a>
 								</div>
 							</div>
 						</div>
@@ -377,7 +419,7 @@
 							</div>
 							<div class="compatibilities">
 								<p class="compatibilities-label">
-									All Devices Compatible With:
+									<span>All Devices </span>Compatible With:
 								</p>
 								<ul class="compatibilities-list">
 									<li class="compatibilities-list__item">
@@ -398,7 +440,12 @@
 								</ul>
 							</div>
 							<div class="product-preview">
-								<a class="product-preview-img" style="background-image: url(img/products/photo3.jpg);"></a>
+								<a class="product-preview-img">
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/cart/3.jpg">
+										<img src="img/products/photo3.jpg" alt="">
+									</picture>
+								</a>
 								<div class="text-wrap">
 									<a class="product-preview-name" href="#">Aires Guardian</a>
 									<div class="product-rating">
@@ -406,12 +453,11 @@
 				                            <span class="rating_starOn" style="width: 90%;"></span>
 				                        </span>
 				                    </div>
-				                    <div class="footer">
-				                    	<div class="product-preview-price">$ 199.99</div>
-				                    	<div class="btn cart-btn">
-				                    		Add to Cart
-				                    	</div>
-				                    </div>
+				                    <div class="product-preview-price">$ 199.99</div>
+			                    	<a class="btn cart-btn" href="#">
+			                    		<span>Add to Cart</span>
+			                    		<span class="mobile">Buy Now</span>
+			                    	</a>
 								</div>
 							</div>
 						</div>

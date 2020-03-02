@@ -38,9 +38,6 @@ return '<p>'+(i+1)+'</p>';
 slidesToShow: 1,
 slidesToScroll: 1,
 swipe: false,
-// speed: 500,
-// fade: true,
-// cssEase: 'linear',
 prevArrow: '.faqs-arrow.prev-arrow',
 nextArrow: '.faqs-arrow.next-arrow'
 });
@@ -56,10 +53,44 @@ $(document).ready(function() {
 });
 $('#homepage-instagram .instagram-slider').slick({
     infinity: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 2,
     autoplaySpeed: 3000,
     arrows: false,
+    dots: false,
+    centerMode: true,
+    responsive: [
+        {
+          breakpoint: 1640,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 1380,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1050,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            dots: true,
+            arrows: true,
+            prevArrow: '.homepage-instagram-arrow.prev-arrow',
+            nextArrow: '.homepage-instagram-arrow.next-arrow'
+          }
+        }
+    ]
   });
 // burger-menu header
 $(document).ready(function(){
@@ -84,4 +115,8 @@ $(document).ready(function(){
     overlay.css("display", "none");
     body.css("overflow", "scroll");
   });
+});
+$('.technology-section .top-text .mobile-open').click(function(){
+  $(this).parent().siblings('.technology-posts').slideToggle();
+  $(this).toggleClass('active');
 });

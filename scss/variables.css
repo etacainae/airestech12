@@ -24,7 +24,7 @@
   margin-right: auto; }
 
 .main-title {
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 50px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -36,7 +36,7 @@
 
 h3 {
   color: #0b0b0b;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.52px; }
@@ -51,7 +51,7 @@ h3 {
   border-radius: 20px;
   background-color: #2db2fa;
   color: #ffffff;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.32px; }
@@ -94,7 +94,7 @@ h3 {
   border: 2px solid #2db2f9;
   background-color: rgba(45, 178, 250, 0.2);
   color: #2db2fa;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.36px; }
@@ -115,7 +115,7 @@ h3 {
   border-radius: 20px;
   background-color: rgba(230, 230, 230, 0.3);
   color: #b2b2b2;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.32px; }
@@ -128,15 +128,25 @@ h3 {
     color: #fff; }
 
 .btn-white {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 20px;
-  line-height: 40px;
+  line-height: 36px;
   border-radius: 20px;
+  border: 2px solid #fff;
   background-color: #ffffff;
   color: #2db2fa;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.32px; }
+  letter-spacing: -0.32px;
+  -webkit-transition: .2s;
+  transition: .2s; }
+  .btn-white:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color: #2db2fa;
+    color: #fff; }
 
 .btn-animate {
   overflow: hidden;
@@ -145,7 +155,7 @@ h3 {
   position: relative;
   padding-right: 55px;
   color: #ffffff;
-  font-family: "Ruda", serif;
+  font-family: "Ruda", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.32px; }
@@ -168,7 +178,7 @@ h3 {
     border-radius: 25px;
     border: 2px solid #2db2fa;
     border-left: none;
-    width: 100%;
+    width: 70px;
     height: 100%;
     background-color: rgba(45, 178, 250, 0.2); }
   .btn-animate:after {
@@ -213,7 +223,7 @@ h3 {
     position: relative;
     width: 34px;
     border: 2px solid #2db2fa;
-    line-height: 40px;
+    height: 40px;
     border-radius: 0 22px 22px 0;
     background-color: rgba(45, 178, 250, 0.2);
     color: #fff; }
@@ -251,10 +261,10 @@ h3 {
     border-bottom: 2px solid #272727;
     background: transparent;
     color: #ffffff;
-    font-family: "Ruda", serif;
+    font-family: "Ruda", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    line-height: 40px;
+    height: 40px;
     letter-spacing: -0.32px; }
   .amount.gray .minus, .amount.gray .plus {
     border-color: #adb1b4;
@@ -272,8 +282,8 @@ h3 {
   vertical-align: top; }
 .product-rating .rating_starOff, .product-rating .rating_starOn {
   width: 85px;
-  height: 13px;
-  background: url(../img/stars-light.png) repeat-x left bottom; }
+  height: 12px;
+  background: url(../img/stars-light.svg) repeat-x left bottom; }
 .product-rating .rating_starOn {
   width: 0;
   cursor: pointer;
@@ -287,5 +297,5 @@ h3 {
   letter-spacing: -0.28px; }
 .product-rating.reviews .rating_starOff, .product-rating.reviews .rating_starOn {
   width: 100px;
-  height: 15px;
-  background: url(../img/uranus/big-stars.png) repeat-x left bottom; }
+  height: 14px;
+  background: url(../img/stars-light-big.svg) repeat-x left bottom; }

@@ -19,9 +19,21 @@ $('.structure-list__item').hover(function() {
   $('[data-id="'+$(this).attr('id')+'"]').removeClass('hover');
 });
 
-$('#how-work .video-wrap .video-start').click(function(){
-$('#how-work .video-wrap .video video')[0].play();
-})
+$("#how-work .video-wrap .video-start").click(function() {
+    var video = $("#how-work .video-wrap .video video").get(0);
+
+    if ( video.paused ) {
+        video.play();
+        $(".play").hide();
+        $(".pause").show();
+    } else {
+        video.pause();
+        $(".play").show();
+        $(".pause").hide();
+    }
+
+    return false;
+});
 
 $('.faqs-list__item .question').click(function(){
   $('.faqs-list__item .answer').not($(this).next()).slideUp('slow');
@@ -38,19 +50,36 @@ return '<p>'+(i+1)+'</p>';
 slidesToShow: 1,
 slidesToScroll: 1,
 swipe: false,
+arrows: true,
 prevArrow: '.faqs-arrow.prev-arrow',
 nextArrow: '.faqs-arrow.next-arrow'
 });
+// $(document).ready(function() {
+//    $(".plus").click(function(){
+//         var input = $(this).siblings(".amount-input");
+//           input[0].stepUp();
+//    });
+//    $(".minus").click(function(){
+//         var input = $(this).siblings(".amount-input");
+//           input[0].stepDown();
+//    });
+// });
 $(document).ready(function() {
-   $(".plus").click(function(){
-        var input = $(this).siblings(".amount-input");
-          input[0].stepUp();
-   });
-   $(".minus").click(function(){
-        var input = $(this).siblings(".amount-input");
-          input[0].stepDown();
-   });
-});
+    $('.minus').click(function () {
+      var $input = $(this).siblings('.amount-input');
+      var count = parseInt($input.val()) - 1;
+      count = count < 1 ? 1 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+    $('.plus').click(function () {
+      var $input = $(this).siblings('.amount-input');
+      $input.val(parseInt($input.val()) + 1);
+      $input.change();
+      return false;
+    });
+  });
 $('#homepage-instagram .instagram-slider').slick({
     infinity: true,
     slidesToShow: 5,
@@ -61,7 +90,7 @@ $('#homepage-instagram .instagram-slider').slick({
     centerMode: true,
     responsive: [
         {
-          breakpoint: 1640,
+          breakpoint: 1840,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 2,
@@ -81,7 +110,7 @@ $('#homepage-instagram .instagram-slider').slick({
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 470,
           settings: {
             slidesToShow: 1,
             dots: true,
@@ -94,29 +123,22 @@ $('#homepage-instagram .instagram-slider').slick({
   });
 // burger-menu header
 $(document).ready(function(){
-  var button = $('.header .burder-btn');
-  var form = $('.header .main-menu');
-  var overlay = $('.overlay');
-  var close = $('#popup-form .close');
+  var button = $('header .burger-btn');
+  var form = $('header');
   var body = $('body');
 
   button.click(function(){
-    form.addClass("active");
-    overlay.css("display", "block");
-    body.css("overflow", "hidden");
+    form.toggleClass("open-burger");
+    body.toggleClass("hidden"); 
   });
-  close.click(function(){
-    form.removeClass("active");
-    overlay.css("display", "none");
-    body.css("overflow", "scroll");
-  });
-  overlay.click(function(){
-    form.removeClass("active")
-    overlay.css("display", "none");
-    body.css("overflow", "scroll");
-  });
+});
+$('.user-menu .active-account ').hover(function(){
+  $(this).toggleClass('active');
 });
 $('.technology-section .top-text .mobile-open').click(function(){
   $(this).parent().siblings('.technology-posts').slideToggle();
   $(this).toggleClass('active');
+});
+$('.account-sidebar .mobile-btn').click(function(){
+  $('.account-sidebar').toggleClass('active');
 });

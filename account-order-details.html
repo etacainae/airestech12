@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Airestech</title>
@@ -11,11 +11,53 @@
 </head>
 <body>
 	<header class="on-white">
-		<div class="container">
-			<a class="logo" href="#"></a>
-			<div class="burger-btn">
-				<img src="img/icons/burger-menu.svg" alt="">
+		<div class="burger-menu">
+			<nav class="main-menu">
+				<ul>
+					<li data-content="Store">
+						<a href="#">Store</a>
+					</li>
+					<li data-content="Instructions">
+						<a href="#">Instructions</a>
+					</li>
+					<li data-content="About Us">
+						<a href="#">About Us</a>
+					</li>
+					<li data-content="Investors">
+						<a href="#">Investors</a>
+					</li>
+					<li data-content="Technology">
+						<a href="#">Technology</a>
+					</li>
+					<li data-content="Media">
+						<a href="#">Media</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-account">
+				<a class="btn" href="#">Login</a>
 			</div>
+			<div class="soc-networks">
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/facebook.svg" alt="">
+					</a>
+				</div>
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/instagram.svg" alt="">
+					</a>
+				</div>
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/twitter.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="burger-btn"></div>
+			<a class="logo" href="#"></a>
 			<nav class="main-menu">
 				<ul>
 					<li data-content="Store">
@@ -42,6 +84,35 @@
 				<div class="user-account">
 					<div class="active-account">
 						<span class="user-name">Calvin Parker</span>
+						<div class="dropdown">
+							<div class="user-nav">
+								<div class="user-info">
+									<span class="dropdown-user-name">Calvin Parker</span>
+									<span class="dropdown-user-mail">calvinparker@gmail.com</span>
+								</div>
+								<div class="mobile-btn"></div>
+								<ul class="dropdown-menu">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link dashboard" href="#">Dashboard</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link orders" href="#">Orders</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link addresses" href="#">Addresses</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link account-details" href="#">Account details</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link contributions" href="#">Contributions</a>
+									</li>
+									<li class="dropdown-menu__item logout-item">
+										<a href="#" class="dropdown-menu__item-link logout">Log Out</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<hr>
@@ -62,10 +133,8 @@
 								<span class="user-name">Calvin Parker</span>
 								<span class="user-mail">calvinparker@gmail.com</span>
 							</div>
-							<div class="mobile-btn">
-								<img src="img/icons/user-white.svg" alt="">
-							</div>
-							<div class="sidebar-menu">
+							<div class="mobile-btn"></div>
+							<ul class="sidebar-menu">
 								<li class="sidebar-menu__item">
 									<a class="sidebar-menu__item-link dashboard" href="#">Dashboard</a>
 								</li>
@@ -81,9 +150,12 @@
 								<li class="sidebar-menu__item">
 									<a class="sidebar-menu__item-link contributions" href="#">Contributions</a>
 								</li>
-							</div>
+								<li class="sidebar-menu__item">
+									<a href="#" class="sidebar-menu__item-link logout">Log Out</a>
+								</li>
+							</ul>
 						</div>
-						<div class="logout">Log Out</div>
+						<a class="logout">Log Out</a>
 					</div>
 					<div class="content order-details">
 						<div class="header">
@@ -270,7 +342,7 @@
 				<h4>Don’t Miss Out</h4>
 				<p class="desc">Subscribe to get special discounts and deals</p>
 				<form class="subscription-form">
-					<input rows="1" placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
+					<input placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
 					<button type="submit" class="subscription-form__btn"></button>
 				</form>
 			</div>

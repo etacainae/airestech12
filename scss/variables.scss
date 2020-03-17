@@ -1,8 +1,7 @@
 $blue: #2db2fa;
 $darken-blue: desaturate(lighten($blue, 1%), 1%);
-$dark: #101010;
 $text-dark: #0b0b0b;
-$Ruda: "Ruda", serif;
+$Ruda: "Ruda", sans-serif;
 .container {
 	position: relative;
 	display: flex;
@@ -30,7 +29,7 @@ $Ruda: "Ruda", serif;
 	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: -1px;
-	color: #0b0b0b;
+	color: $text-dark;
 	.blue {
 		color: $blue;
 	}
@@ -39,7 +38,7 @@ $Ruda: "Ruda", serif;
 	}
 }
 h3 {
-	color: #0b0b0b;
+	color: $text-dark;
 	font-family: $Ruda;
 	font-size: 26px;
 	font-weight: 700;
@@ -52,7 +51,7 @@ h3 {
 	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 20px;
-	background-color: #2db2fa;
+	background-color: $blue;
 	color: #ffffff;
 	font-family: $Ruda;
 	font-size: 16px;
@@ -106,7 +105,7 @@ h3 {
 	&:hover {
 		transition: .2s;
 		box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
-		background-color: #2db2fa;
+		background-color: $blue;
 		color: #ffffff;
 	}
 }
@@ -125,20 +124,28 @@ h3 {
 	&:hover {
 		transition: .2s;
 	    box-shadow: 0 15px 15px rgba(45, 178, 250, 0.15);
-		background-color: #2db2fa;
+		background-color: $blue;
 	    color: #fff;
 	}
 }
 .btn-white {
+	box-sizing: border-box;
 	padding: 0 20px;
-	line-height: 40px;
+	line-height: 36px;
 	border-radius: 20px;
+	border: 2px solid #fff;
 	background-color: #ffffff;
-	color: #2db2fa;
+	color: $blue;
 	font-family: $Ruda;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: -0.32px;
+	transition: .2s;
+	&:hover {
+		transition: .2s;
+		background-color: $blue;
+	    color: #fff;
+	}
 }
 .btn-animate {
 	overflow: hidden;
@@ -170,7 +177,7 @@ h3 {
 		border-radius: 25px;
 		border: 2px solid $blue;
 		border-left: none;
-		width: 100%;
+		width: 70px;
 		height: 100%;
 		background-color: rgba( $blue, .2 )
 	}
@@ -188,7 +195,7 @@ h3 {
 		border-radius: 25px 0 0 25px;
 	}
 	&.white {
-		color: #0b0b0b;
+		color: $text-dark;
 		span:after {
 			content: url(../img/icons/arrow-right_blue.svg);
 		}
@@ -219,7 +226,7 @@ h3 {
 		position: relative;
 		width: 34px;
 		border: 2px solid $blue;
-		line-height: 40px;
+		height: 40px;
 		border-radius: 0 22px 22px 0;
 		background-color: rgba($blue, .2);
 		color: #fff;
@@ -263,7 +270,7 @@ h3 {
 		font-family: $Ruda;
 		font-size: 16px;
 		font-weight: 700;
-		line-height: 40px;
+		height: 40px;
 		letter-spacing: -0.32px;
 	}
 	&.gray {
@@ -289,8 +296,8 @@ h3 {
 	}
 	.rating_starOff, .rating_starOn {
 	    width: 85px;
-        height: 13px;
-	    background: url(../img/stars-light.png) repeat-x left bottom;
+        height: 12px;
+	    background: url(../img/stars-light.svg) repeat-x left bottom;
 	}
 	.rating_starOn {
 		width: 0;
@@ -308,8 +315,8 @@ h3 {
 	&.reviews {
 		.rating_starOff, .rating_starOn {
 			width: 100px;
-	        height: 15px;
-	    	background: url(../img/uranus/big-stars.png) repeat-x left bottom;
+	        height: 14px;
+	    	background: url(../img/stars-light-big.svg) repeat-x left bottom;
 		}
 		.rating_starOff {
 		}

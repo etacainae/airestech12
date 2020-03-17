@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Airestech</title>
@@ -11,11 +11,53 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<a class="logo" href="#"></a>
-			<div class="burger-btn">
-				<img src="img/icons/burger-menu.svg" alt="">
+		<div class="burger-menu">
+			<nav class="main-menu">
+				<ul>
+					<li data-content="Store">
+						<a href="#">Store</a>
+					</li>
+					<li data-content="Instructions">
+						<a href="#">Instructions</a>
+					</li>
+					<li data-content="About Us">
+						<a href="#">About Us</a>
+					</li>
+					<li data-content="Investors">
+						<a href="#">Investors</a>
+					</li>
+					<li data-content="Technology">
+						<a href="#">Technology</a>
+					</li>
+					<li data-content="Media">
+						<a href="#">Media</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-account">
+				<a class="btn" href="#">Login</a>
 			</div>
+			<div class="soc-networks">
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/facebook.svg" alt="">
+					</a>
+				</div>
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/instagram.svg" alt="">
+					</a>
+				</div>
+				<div class="soc-networks__item">
+					<a href="#">
+						<img src="img/icons/twitter.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="burger-btn"></div>
+			<a class="logo" href="#"></a>
 			<nav class="main-menu">
 				<ul>
 					<li data-content="Store">
@@ -42,6 +84,35 @@
 				<div class="user-account">
 					<div class="active-account">
 						<span class="user-name">Calvin Parker</span>
+						<div class="dropdown">
+							<div class="user-nav">
+								<div class="user-info">
+									<span class="dropdown-user-name">Calvin Parker</span>
+									<span class="dropdown-user-mail">calvinparker@gmail.com</span>
+								</div>
+								<div class="mobile-btn"></div>
+								<ul class="dropdown-menu">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link dashboard" href="#">Dashboard</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link orders" href="#">Orders</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link addresses" href="#">Addresses</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link account-details" href="#">Account details</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link contributions" href="#">Contributions</a>
+									</li>
+									<li class="dropdown-menu__item logout-item">
+										<a href="#" class="dropdown-menu__item-link logout">Log Out</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<hr>
@@ -60,26 +131,26 @@
 					    <div class="home-main-table__row">
 					       <div class="home-main-table__item">
 					       		<img src="img/new-1.svg" alt="">
-					           <p>5G Compatible</p>
+					           <p>5G <br>Compatible</p>
 					       </div>
 					        <div class="home-main-table__item">
 								<img src="img/new-4.svg" alt="">
-					    	    <p>Patented Technology</p>
+					    	    <p>Patented <br>Technology</p>
 					        </div>
 					       <div class="home-main-table__item">
 					       		<img src="img/new-2.svg" alt="">
-					           <p>Laboratory Tested</p>
+					           <p>Laboratory <br>Tested</p>
 					       </div>
 					    </div>
 					    <div class="home-main-table__row right">
 					        <div class="home-main-table__item">
 					        	<img src="img/new-3.svg" alt="">
-					            <p>Completely Science Based</p>
+					            <p>Completely <br>Science Based</p>
 					        </div>
 					    </div>
 					</div>
 					<div class="text-wrap">
-						<h2 class="main-title white">Introducing <br>Aires Guardian</h2>
+						<h2 class="main-title white">Introducing Aires Guardian</h2>
 						<p class="desc">
 							Aires Guardian has three next generation silicon based micro 
 							processors that provide universal protection from electromagnetic 
@@ -264,7 +335,6 @@
 				                            <span class="rating_starOn" style="width: 100%;"></span>
 				                        </span>
 				                    </div>
-			                    	<div class="product-preview-price">$ 49.99</div>
 			                    	<a class="btn" href="#">More Info</a>
 								</div>
 							</div>
@@ -336,7 +406,6 @@
 				                            <span class="rating_starOn" style="width: 80%;"></span>
 				                        </span>
 				                    </div>
-				                    <div class="product-preview-price">$ 199.99</div>
 				                    <a class="btn" href="#">More Info</a>
 								</div>
 							</div>
@@ -411,7 +480,6 @@
 				                            <span class="rating_starOn" style="width: 90%;"></span>
 				                        </span>
 				                    </div>
-				                    <div class="product-preview-price">$ 199.99</div>
 				                    <a class="btn" href="#">More Info</a>
 								</div>
 							</div>
@@ -420,7 +488,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="banner">
+		<section class="banner">
 			<div class="container">
 				<div class="banner-wrap banner1">
 					<h3>Protect Yourself & Your Family</h3>
@@ -429,21 +497,23 @@
 			</div>
 		</section>
 		<section id="homepage-desc" class="about-us">
-			<div class="container">
-				<div class="text-wrap">
-					<h2 class="main-title">
-						Crystalline <br>Lattice
-					</h2>
-					<div class="section-desc">
-						<div class="flow-around"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-						tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p>Quis ipsum 
-						suspendisse ultrices gravida. Risus commodo viverra maecenas 
-						accumsan lacus vel facilisis. </p>
+			<div class="container-border">
+				<div class="container">
+					<div class="text-wrap">
+						<h2 class="main-title">
+							Crystalline <br>Lattice
+						</h2>
+						<div class="section-desc">
+							<div class="flow-around"></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Quis ipsum 
+							suspendisse ultrices gravida. Risus commodo viverra maecenas 
+							accumsan lacus vel facilisis. </p>
+						</div>
 					</div>
+					<img class="image" src="img/homepage/homepage-desc.png" alt="">
 				</div>
-				<img class="image" src="img/homepage/homepage-desc.png" alt="">
 			</div>
 		</section>
 		<section id="homepage-instagram">
@@ -483,7 +553,7 @@
 				<svg class="circle" xmlns="http://www.w3.org/2000/svg">
 				    <g>
 				      <ellipse class="background" ry="13" rx="13" cy="15.5" cx="15.5" stroke-width="2"/>
-				      <path xmlns="http://www.w3.org/2000/svg" id="Path_736" data-name="Path 736" d="M7,10.785,3.5,7.008,0,10.785" transform="translate(6 19) rotate(-90)" fill="none" stroke="#b2b2b2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				      <path xmlns="http://www.w3.org/2000/svg" data-name="Path 736" d="M7,10.785,3.5,7.008,0,10.785" transform="translate(6 19) rotate(-90)" fill="none" stroke="#b2b2b2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
 				    </g>
 				  </svg>
 			</div>
@@ -491,7 +561,8 @@
 				<svg class="circle" xmlns="http://www.w3.org/2000/svg">
 				    <g>
 				      <ellipse class="background" ry="13" rx="13" cy="15.5" cx="15.5" stroke-width="2"/>
-				      <path xmlns="http://www.w3.org/2000/svg" id="Path_736" data-name="Path 736" d="M7,10.785,3.5,7.008,0,10.785" transform="translate(25 12) rotate(90)" fill="none" stroke="#b2b2b2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				      <!-- <ellipse class="foreground" ry="13" rx="13" cy="15.5" cx="15.5" stroke-width="2"/> -->
+				      <path xmlns="http://www.w3.org/2000/svg" data-name="Path 736" d="M7,10.785,3.5,7.008,0,10.785" transform="translate(25 12) rotate(90)" fill="none" stroke="#b2b2b2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
 				    </g>
 				  </svg>
 			</div>
@@ -501,62 +572,68 @@
 				<div class="container">
 					<h2 class="main-title">Our Product <br>Lineup</h2>
 					<div class="products-preview">
-						<div class="products-preview__item">
-							<a class="products-preview__item-img" style="background-image: url(img/products/photo1.jpg);"></a>
-							<div class="text-wrap">
-								<a class="products-preview__item-name" href="#">Aires Defender Pro</a>
-								<div class="product-rating">
-			                        <span class="rating_starOff" style="cursor: pointer;">
-			                            <span class="rating_starOn"></span>
-			                        </span>
-			                    </div>
-			                    <div class="footer">
-			                    	<div class="products-preview__item-price">$ 199.99</div>
-			                    	<div class="btn cart-btn">
-			                    		Add to Cart
-			                    	</div>
-			                    </div>
+						<div class="anim-wrap">
+							<div class="products-preview__item">
+								<a class="products-preview__item-img" style="background-image: url(img/products/photo1.jpg);"></a>
+								<div class="text-wrap">
+									<a class="products-preview__item-name" href="#">Aires Defender Pro</a>
+									<div class="product-rating">
+				                        <span class="rating_starOff" style="cursor: pointer;">
+				                            <span class="rating_starOn"></span>
+				                        </span>
+				                    </div>
+				                    <div class="footer">
+				                    	<div class="products-preview__item-price">$ 199.99</div>
+				                    	<div class="btn cart-btn">
+				                    		Add to Cart
+				                    	</div>
+				                    </div>
+								</div>
 							</div>
 						</div>
-						<div class="products-preview__item">
-							<a class="products-preview__item-img" style="background-image: url(img/products/photo2.jpg);"></a>
-							<div class="text-wrap">
-								<a class="products-preview__item-name" href="#">Aires Shield Pro</a>
-								<div class="product-rating">
-			                        <span class="rating_starOff" style="cursor: pointer;">
-			                            <span class="rating_starOn"></span>
-			                        </span>
-			                    </div>
-			                    <div class="footer">
-			                    	<div class="products-preview__item-price">$ 49.99</div>
-			                    	<div class="btn cart-btn">
-			                    		Add to Cart
-			                    	</div>
-			                    </div>
+						<div class="anim-wrap">
+							<div class="products-preview__item">
+								<a class="products-preview__item-img" style="background-image: url(img/products/photo2.jpg);"></a>
+								<div class="text-wrap">
+									<a class="products-preview__item-name" href="#">Aires Shield Pro</a>
+									<div class="product-rating">
+				                        <span class="rating_starOff" style="cursor: pointer;">
+				                            <span class="rating_starOn"></span>
+				                        </span>
+				                    </div>
+				                    <div class="footer">
+				                    	<div class="products-preview__item-price">$ 49.99</div>
+				                    	<div class="btn cart-btn">
+				                    		Add to Cart
+				                    	</div>
+				                    </div>
+								</div>
 							</div>
 						</div>
-						<div class="products-preview__item">
-							<a class="products-preview__item-img" style="background-image: url(img/products/photo3.jpg);"></a>
-							<div class="text-wrap">
-								<a class="products-preview__item-name" href="#">Aires Guardian</a>
-								<div class="product-rating">
-			                        <span class="rating_starOff" style="cursor: pointer;">
-			                            <span class="rating_starOn"></span>
-			                        </span>
-			                    </div>
-			                    <div class="footer">
-			                    	<div class="products-preview__item-price">$ 199.99</div>
-			                    	<div class="btn cart-btn">
-			                    		Add to Cart
-			                    	</div>
-			                    </div>
+						<div class="anim-wrap">
+							<div class="products-preview__item">
+								<a class="products-preview__item-img" style="background-image: url(img/products/photo3.jpg);"></a>
+								<div class="text-wrap">
+									<a class="products-preview__item-name" href="#">Aires Guardian</a>
+									<div class="product-rating">
+				                        <span class="rating_starOff" style="cursor: pointer;">
+				                            <span class="rating_starOn"></span>
+				                        </span>
+				                    </div>
+				                    <div class="footer">
+				                    	<div class="products-preview__item-price">$ 199.99</div>
+				                    	<div class="btn cart-btn">
+				                    		Add to Cart
+				                    	</div>
+				                    </div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="banner">
+		<section class="banner">
 			<div class="container-border">
 				<div class="container">
 					<div class="banner-wrap banner2" style="">
@@ -627,7 +704,7 @@
 				<h4>Don’t Miss Out</h4>
 				<p class="desc">Subscribe to get special discounts and deals</p>
 				<form class="subscription-form">
-					<input rows="1" placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
+					<input placeholder="Type Your E-mail" title="Type Your E-mail" autocomplete="email" class="subscription-form__input" type="email" required>
 					<button type="submit" class="subscription-form__btn"></button>
 				</form>
 			</div>

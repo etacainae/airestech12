@@ -1,0 +1,12 @@
+<svg id="Component_184_1" data-name="Component 184 – 1" xmlns="http://www.w3.org/2000/svg" width="20" height="30.069" viewBox="0 0 20 30.069">
+  <g id="Component_183_1" data-name="Component 183 – 1" transform="translate(2.312)">
+    <path id="Path_716" data-name="Path 716" d="M7.725.684,9.6,5.125l4.8.413a.379.379,0,0,1,.216.663L10.978,9.359l1.092,4.7a.378.378,0,0,1-.564.41l-4.129-2.49-4.129,2.49a.379.379,0,0,1-.564-.41l1.092-4.7L.131,6.2a.379.379,0,0,1,.216-.663l4.8-.413L7.028.684a.378.378,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#2db2fa"/>
+    <g id="star_4_" data-name="star (4)" transform="translate(0.104 16)">
+      <path id="Path_716-2" data-name="Path 716" d="M7.725.684,9.6,5.125l4.8.413a.379.379,0,0,1,.216.663L10.978,9.359l1.092,4.7a.378.378,0,0,1-.564.41l-4.129-2.49-4.129,2.49a.379.379,0,0,1-.564-.41l1.092-4.7L.131,6.2a.379.379,0,0,1,.216-.663l4.8-.413L7.028.684a.378.378,0,0,1,.7,0Z" transform="translate(0 -0.452)" fill="#e6e6e6"/>
+    </g>
+  </g>
+  <g id="Rectangle_454" data-name="Rectangle 454" transform="translate(0 0.069)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+    <rect width="20" height="30" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="29" fill="none"/>
+  </g>
+</svg>
